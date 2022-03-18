@@ -12,7 +12,7 @@ const UserRoutes = require("./src/api/users/users.routes");
 
 const { connect } = require("./src/utils/database/db");
 
-const {configCloudinary} = require("./src/utils/cloudinary/config")
+const { configCloudinary } = require("./src/utils/cloudinary/config");
 
 const PORT = process.env.PORT || 8083;
 
@@ -38,6 +38,10 @@ app.use(
 );
 
 app.use(cors());
+
+app.get("/", (req, res) => {
+  res.send("Bienvenido al server de musica");
+});
 
 //rutas
 app.use("/artist", ArtistRoutes);
