@@ -1,0 +1,6 @@
+{ 
+    "env": { 
+      "JWT_KEY":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMzQ1MDE1YTQ3M2I2MjZiNmJhMjM3NSIsImVtYWlsIjoianJpYmFsbG8yM0BnbWFpbC5jb20iLCJpYXQiOjE2NDc1OTYwNTcsImV4cCI6MTY0NzY4MjQ1N30.dc90J1PMhDS2aoPU_5noFxp0UT3pGqFBbDwePSLj_qc"
+      
+      }
+    }
