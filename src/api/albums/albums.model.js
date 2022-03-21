@@ -8,7 +8,7 @@ const albumSchema = new mongoose.Schema(
     date: { type: String, required: true, trim: true },
     genre: { type: String, required: true, trim: true },
     songs: [
-      { type: mongoose.Schema.Types.ObjectId, ref: "songs"},
+      { type: mongoose.Schema.Types.ObjectId, ref: "songs" , require:false},
     ],
     img: { type: String, trim: true, required: false }
   },

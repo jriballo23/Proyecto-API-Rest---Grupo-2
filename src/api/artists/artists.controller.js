@@ -43,6 +43,9 @@ const patchOne = async (req, res, next) => {
         const { id } = req.params;
         const artist = new Artist(req.body);
         artist._id = id;
+        if (artist.albums.length < 0 || artist.albums.length == undefined ){
+            delete artist.albums
+        }
         if (req.file) artist.img = req.file.path
         const updateArtist = await Artist.findByIdAndUpdate(id, artist);
         return res.status(200).json(updateArtist);
